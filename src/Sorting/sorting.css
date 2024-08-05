@@ -1,0 +1,25 @@
+.sortable-header {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .sortable-header:hover {
+    background-color: #dfaad3;
+  }
+  
+  .sortable-header::after {
+    content: 'Сортировка';
+    display: none;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  
+  .sortable-header:hover::after {
+    display: block;
+  }
